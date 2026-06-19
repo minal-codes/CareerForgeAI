@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareerForge AI</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+</head>
+
+<body>
+    <div class="scan-line"></div>
+
+<div class="grid-bg"></div>
+
+<div class="dashboard">
+
+    <div class="topbar">
+
+        <div class="logo">
+            CAREERFORGE AI
+        </div>
+
+        <div class="status">
+            AI SYSTEM ONLINE
+        </div>
+
+    </div>
+
+    <div class="hero">
+
+        <h1>CAREER INTELLIGENCE CENTER</h1>
+
+        <p>
+            Resume Analysis Powered By AI
+        </p>
+
+    </div>
+
+    <div class="score-section">
+
+        <div class="score-card">
+
+            <h2>CAREER SCORE</h2>
+
+            <div class="circle">
+                {{ analysis.score }}
+            </div>
+
+        </div>
+
+        <div class="score-card">
+
+            <h2>ATS SCORE</h2>
+
+            <div class="circle">
+                {{ analysis.ats_score }}
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+    <h2>AI RESUME SUMMARY</h2>
+
+    <button id="summaryBtn" class="ai-btn">
+        Generate AI Summary
+    </button>
+
+    <div id="summaryBox" style="display:none; margin-top:20px;">
+        <div class="list-item">
+            {{ analysis.summary }}
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("summaryBtn").addEventListener("click", function(){
+
+    document.getElementById("summaryBox").style.display = "block";
+
+    this.innerText = "Summary Generated";
+
+});
+
+</script>
+
+    <div class="panel">
+
+        <h2>STRENGTHS</h2>
+
+        {% for item in analysis.strengths %}
+        <div class="chip">
+            {{ item }}
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="panel">
+
+        <h2>MISSING SKILLS</h2>
+
+        {% for item in analysis.missing %}
+        <div class="chip red">
+            {{ item }}
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="panel">
+
+        <h2>RECOMMENDED ROLES</h2>
+
+        {% for item in analysis.job_roles %}
+        <div class="list-item">
+            {{ item }}
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="panel">
+
+        <h2>INTERVIEW QUESTIONS</h2>
+
+        {% for item in analysis.interview_questions %}
+        <div class="list-item">
+            {{ item }}
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="panel">
+
+<h2>AI INSIGHTS</h2>
+
+<div class="list-item">
+Resume has strong potential for AI/ML roles.
+</div>
+
+<div class="list-item">
+Improve ATS score by adding SQL and GitHub projects.
+</div>
+
+<div class="list-item">
+Azure certification can increase hiring chances.
+</div>
+
+</div>
+
+</div>
+
+
+
+</body>
+</html>
+
+<div class="footer">
+
+CAREERFORGE AI • NEURAL ANALYSIS ENGINE • v1.0
+
+</div>

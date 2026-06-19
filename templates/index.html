@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerForge AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">CareerForge AI</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>AI-Powered Career Mentor for Students</h1>
+
+        <p>
+            Get personalized career guidance, skill gap analysis,
+            learning roadmaps, and project recommendations powered by AI.
+        </p>
+
+        <a href="/upload">
+            <button>Upload Resume</button>
+        </a>
+
+    </section>
+    <section class="features">
+
+        <h2>What CareerForge AI Offers</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <h3>Resume Analysis</h3>
+                <p>Get detailed insights into your resume strengths and weaknesses.</p>
+            </div>
+
+            <div class="card">
+                <h3>Skill Gap Detection</h3>
+                <p>Identify missing skills required for your dream role.</p>
+            </div>
+
+            <div class="card">
+                <h3>Career Roadmap</h3>
+                <p>Receive a personalized learning roadmap powered by AI.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
