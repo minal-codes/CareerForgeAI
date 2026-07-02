@@ -126,7 +126,7 @@ Professional PDF Report
 <h3 align="center">Upload page</h3>
 
 <p align="center">
-  <img src="dashboard.png" alt="Background Detected" width="500">
+  <img src="Screenshots/upload.png" alt="Background Detected" width="500">
 </p>
 
 ---
