@@ -1,4 +1,4 @@
-# 🚀 CareerForge AI
+#  <h1 align="center"><b>🚀 CareerForge AI</b></h1>
 
 <div align="center">
 
@@ -17,7 +17,7 @@ Transform resumes into actionable career intelligence using AI-powered document 
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **CareerForge AI** is an intelligent career analytics platform engineered to bridge the gap between traditional resumes and modern recruitment systems.
 
@@ -27,64 +27,110 @@ The objective is to provide job seekers with data-driven insights that enhance e
 
 ---
 
-## ✨ Core Capabilities
+##  Platform Capabilities
 
-### 📄 Intelligent Resume Parsing
-- AI-powered resume extraction
-- Structured candidate information
-- Automatic skill identification
-- Education & experience extraction
-
-### 📊 Resume Intelligence
-- ATS Compatibility Analysis
-- Career Readiness Score
-- Resume Quality Assessment
-- AI-generated Professional Summary
-
-### 🧠 AI Career Insights
-- Skill Gap Identification
-- Recommended Learning Areas
-- Job Role Prediction
-- Personalized Career Recommendations
-
-### 🎯 Interview Preparation
-- Domain-specific interview questions
-- Technical & HR question generation
-- Career roadmap suggestions
-
-### 📑 Professional Reporting
-- Automated PDF Report Generation
-- Downloadable Resume Analysis
-- Career Intelligence Report
+### Resume Processing
+- Extracts structured information from uploaded resumes using Azure Document Intelligence.
+- Identifies candidate details, education, work experience, technical skills, and certifications.
+- Converts unstructured resume documents into standardized data for further analysis.
 
 ---
 
-# 🏗 System Workflow
+### Resume Evaluation
+- Calculates an Applicant Tracking System (ATS) compatibility score.
+- Evaluates overall resume quality based on completeness and content structure.
+- Generates a comprehensive candidate assessment report.
+
+---
+
+### Career Intelligence
+- Analyzes technical skills to identify competency gaps.
+- Predicts suitable job roles based on the extracted profile.
+- Recommends improvement areas to strengthen career readiness.
+
+---
+
+### Interview Readiness
+- Generates role-specific technical interview questions.
+- Provides HR interview preparation questions.
+- Suggests a structured learning roadmap aligned with the predicted career path.
+
+---
+
+### Reporting & Insights
+- Presents analysis through an interactive dashboard.
+- Generates a downloadable PDF report containing resume insights and evaluation metrics.
+- Consolidates all recommendations into a single professional assessment document.
+
+---
+
+
+# ⚙️ System Workflow
 
 ```text
-Resume Upload
-      │
-      ▼
-Azure Document Intelligence
-      │
-      ▼
-Resume Parsing
-      │
-      ▼
-AI Analysis Engine
-      │
-      ├── ATS Score
-      ├── Career Score
-      ├── Resume Summary
-      ├── Skill Gap Analysis
-      ├── Job Role Prediction
-      └── Interview Questions
-      │
-      ▼
-Professional PDF Report
+                           ┌────────────────────┐
+                           │   User Uploads     │
+                           │      Resume        │
+                           └─────────┬──────────┘
+                                     │
+                                     ▼
+                     ┌────────────────────────────────┐
+                     │ Resume Validation & Processing │
+                     └─────────┬──────────────────────┘
+                               │
+                               ▼
+              ┌──────────────────────────────────────┐
+              │ Azure Document Intelligence Service  │
+              │  • OCR                              │
+              │  • Layout Detection                 │
+              │  • Entity Extraction                │
+              └─────────┬────────────────────────────┘
+                        │
+                        ▼
+             ┌─────────────────────────────────────┐
+             │ Structured Resume Data Extraction   │
+             │                                     │
+             │ • Personal Details                  │
+             │ • Education                         │
+             │ • Skills                            │
+             │ • Experience                        │
+             │ • Certifications                    │
+             └─────────┬───────────────────────────┘
+                       │
+                       ▼
+              ┌────────────────────────────────────┐
+              │    AI Analysis Engine              │
+              └─────────┬──────────────────────────┘
+                        │
+      ┌─────────────────┼──────────────────┐
+      │                 │                  │
+      ▼                 ▼                  ▼
+┌──────────────┐  ┌──────────────┐  ┌────────────────┐
+│ ATS Analysis │  │ Career Score │  │ Resume Summary │
+└──────────────┘  └──────────────┘  └────────────────┘
+      │                 │                  │
+      └─────────────────┼──────────────────┘
+                        │
+                        ▼
+          ┌─────────────────────────────────┐
+          │ Advanced Career Intelligence    │
+          │                                 │
+          │ • Skill Gap Analysis            │
+          │ • Job Role Prediction           │
+          │ • Interview Questions           │
+          │ • Career Roadmap                │
+          └──────────────┬──────────────────┘
+                         │
+                         ▼
+          ┌─────────────────────────────────┐
+          │ Professional Dashboard          │
+          │                                 │
+          │ • Visual Analytics              │
+          │ • Career Insights               │
+          │ • Download PDF Report           │
+          └─────────────────────────────────┘
 ```
 
----
 
 # 🛠 Technology Stack
 
@@ -98,18 +144,18 @@ Professional PDF Report
 
 ---
 
-# 📌 Key Features
+# Feature Highlights
 
-- ✅ Resume Upload Interface
-- ✅ AI Resume Parsing
-- ✅ ATS Score Calculation
-- ✅ Career Readiness Score
-- ✅ AI Resume Summary
-- ✅ Skill Gap Analysis
-- ✅ Job Role Prediction
-- ✅ Personalized Interview Questions
-- ✅ Career Roadmap
-- ✅ Downloadable PDF Report
+- **Resume Document Processing** — Parses PDF resumes into structured candidate data.
+- **ATS Compatibility Assessment** — Evaluates resume performance against ATS-oriented criteria.
+- **Career Readiness Evaluation** — Measures overall profile strength using multiple assessment metrics.
+- **Professional Resume Summary** — Generates a concise overview of the candidate profile.
+- **Skill Gap Identification** — Detects competency gaps and highlights improvement areas.
+- **Role Recommendation Engine** — Predicts suitable job roles based on resume content.
+- **Interview Preparation Support** — Generates role-specific technical and HR interview questions.
+- **Career Development Roadmap** — Provides structured guidance for professional growth.
+- **Interactive Analytics Dashboard** — Presents insights through a clean and intuitive interface.
+- **Professional PDF Export** — Generates a comprehensive downloadable analysis report.
 
 ---
 
@@ -140,24 +186,7 @@ Professional PDF Report
 
 ---
 
-# 🚀 Future Roadmap
-
-CareerForge AI is designed with scalability in mind. Planned enhancements include:
-
-- 🤖 Azure OpenAI Integration
-- 💬 AI Career Assistant Chatbot
-- 🎯 Intelligent Job Match Analyzer
-- 🧠 LLM-powered Resume Optimization
-- 🎤 AI Interview Simulator
-- 📈 Resume Version Comparison
-- 🌐 LinkedIn Profile Analyzer
-- 📝 Cover Letter Generator
-- 🔍 Real-time Job Recommendation Engine
-- 📚 Personalized Learning Roadmaps
-
----
-
-# 🎯 Project Highlights
+#  Project Highlights
 
 - Enterprise-inspired architecture
 - AI-assisted career intelligence
@@ -169,7 +198,7 @@ CareerForge AI is designed with scalability in mind. Planned enhancements includ
 
 ---
 
-# 👩‍💻 Author
+#  Author
 
 ### **Minal Sharma**
 
@@ -177,7 +206,7 @@ Aspiring AI Engineer passionate about building practical AI applications that so
 
 ---
 
-## ⭐ Support
+
 
 If you found this project useful,
 
