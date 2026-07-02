@@ -113,9 +113,7 @@ Professional PDF Report
 
 ---
 
-# 📷 Screenshots
-
-## 🏠 Home Page
+# Demo
 
 <h3 align="center">Home page </h3>
 
@@ -125,8 +123,6 @@ Professional PDF Report
 
 ---
 
-## 📤 Resume Upload
-
 <h3 align="center">Upload page</h3>
 
 <p align="center">
@@ -135,7 +131,6 @@ Professional PDF Report
 
 ---
 
-## 📊 Analytics Dashboard
 
 <h3 align="center">Dashboard</h3>
 
