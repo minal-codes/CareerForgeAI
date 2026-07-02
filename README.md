@@ -1,4 +1,4 @@
-#  <h1 align="center"><b>🚀 CareerForge AI</b></h1>
+#  <h1 align="center"><b> CareerForge AI</b></h1>
 
 <div align="center">
 
